@@ -26,6 +26,8 @@
 
 # Mock up for the project
     
+![Mockup](https://user-images.githubusercontent.com/90822220/167740800-55d7219e-300a-4f3e-bb53-4e32d7139cb5.jpg)
+
 
 
 
