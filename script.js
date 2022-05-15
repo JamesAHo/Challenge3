@@ -6,7 +6,7 @@ var uppercaseCharacter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
 var lowercaseCharacter = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var specialCharacter = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?","~"];
 
-// make variables that user can choose the length abnd characters in their password.
+// make variables that user can choose the length and characters in their password.
 var chooselength = '';
 var chooseSpecialcharacter = '';
 var chooseUppercase = '';
@@ -16,30 +16,27 @@ var choosenumeric = '';
 
 
 
+
+
 // add promt when click password generate.
 // add an eventlistener to prompt confirmation.
 document.querySelector('#generate').addEventListener('click', writePassword);
 function generatePassword() {
-  // validate input is number
-
-
+ 
   var chooselength = (prompt('Please enter the number of characters of your password! '));
   // create function that if user choose less than 8 or more than 128 characters.
   // run a loop to check on the length interval.
-  while(chooselength <= 7 || chooselength >= 129) {
+  while(chooselength <= 8 || chooselength >= 128) {
     alert('Please try again ! input should be at least 8 or no more than 128 characters')
     var chooselength = (prompt('Please enter the number of characters of your password! '));
   } 
-  
-  
-  
     alert(`Your password contain ${chooselength} characters!`);
-   
+  
   
 
   
   
-  
+
   
   // confirming all charcaters
   var chooseUppercase = confirm('Click Ok to add uppercase letters');
@@ -47,6 +44,7 @@ function generatePassword() {
   var chooseSpecialcharacter = confirm(' Click Ok to add special characters');
   var choosenumeric = confirm('Click Ok to add numeric numbers');
   // Create function to make sure user input is valid
+  
   while(chooseLowercase === false && chooseSpecialcharacter === false 
     && chooseUppercase === false && choosenumeric === false) {
     alert('Please choose at least one');
@@ -88,7 +86,7 @@ function generatePassword() {
 
 
 
-// Get references to the #generate element
+
 
 
 // Write password to the #password input
