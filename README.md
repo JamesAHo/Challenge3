@@ -21,10 +21,10 @@
 
     The goal of this project is to write codes to generate a secured password on an existing html files. Below are the approaches that need to be solved in the project:
 - The password must be randomly generated based on the user request and user able to choose options on promt.
-- The lenth of the password must be at least 8 characters and no more tha 128 characters.
+- The length of the password must be at least 8 characters and no more tha 128 characters.
 -Password format including lowercase, uppercase, numeric and special characters(optional).
 
-# Mock up for the project
+# Mock Up
     
 ![Mockup](https://user-images.githubusercontent.com/90822220/167740800-55d7219e-300a-4f3e-bb53-4e32d7139cb5.jpg)
 
