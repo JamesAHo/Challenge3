@@ -18,6 +18,8 @@ var choosenumeric = '';
 
 
 
+
+
 // add promt when click password generate.
 // add an eventlistener to prompt confirmation.
 document.querySelector('#generate').addEventListener('click', writePassword);
@@ -26,7 +28,7 @@ function generatePassword() {
   var chooselength = (prompt('Please enter the number of characters of your password! '));
   // create function that if user choose less than 8 or more than 128 characters.
   // run a loop to check on the length interval.
-  while(chooselength <= 8 || chooselength >= 128) {
+  while(chooselength <= 7 || chooselength >= 129) {
     alert('Please try again ! input should be at least 8 or no more than 128 characters')
     var chooselength = (prompt('Please enter the number of characters of your password! '));
   } 
